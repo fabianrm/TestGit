@@ -26,8 +26,10 @@ Partial Class Form1
         Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
         Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
         Me.DropDownButton1 = New DevExpress.XtraEditors.DropDownButton()
+        Me.ButtonEdit1 = New DevExpress.XtraEditors.ButtonEdit()
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ButtonEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SimpleButton1
@@ -60,11 +62,20 @@ Partial Class Form1
         Me.DropDownButton1.TabIndex = 3
         Me.DropDownButton1.Text = "DropDownButton1"
         '
+        'ButtonEdit1
+        '
+        Me.ButtonEdit1.Location = New System.Drawing.Point(32, 54)
+        Me.ButtonEdit1.Name = "ButtonEdit1"
+        Me.ButtonEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
+        Me.ButtonEdit1.Size = New System.Drawing.Size(305, 20)
+        Me.ButtonEdit1.TabIndex = 4
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(406, 306)
+        Me.Controls.Add(Me.ButtonEdit1)
         Me.Controls.Add(Me.DropDownButton1)
         Me.Controls.Add(Me.TextEdit2)
         Me.Controls.Add(Me.TextEdit1)
@@ -73,6 +84,7 @@ Partial Class Form1
         Me.Text = "Form1"
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ButtonEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -80,5 +92,6 @@ Partial Class Form1
     Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents DropDownButton1 As DevExpress.XtraEditors.DropDownButton
+    Friend WithEvents ButtonEdit1 As DevExpress.XtraEditors.ButtonEdit
 
 End Class
