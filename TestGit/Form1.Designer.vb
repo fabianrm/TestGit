@@ -27,6 +27,7 @@ Partial Class Form1
         Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
         Me.DropDownButton1 = New DevExpress.XtraEditors.DropDownButton()
         Me.ButtonEdit1 = New DevExpress.XtraEditors.ButtonEdit()
+        Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ButtonEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -34,9 +35,9 @@ Partial Class Form1
         '
         'SimpleButton1
         '
-        Me.SimpleButton1.Location = New System.Drawing.Point(263, 233)
+        Me.SimpleButton1.Location = New System.Drawing.Point(36, 232)
         Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(75, 23)
+        Me.SimpleButton1.Size = New System.Drawing.Size(301, 23)
         Me.SimpleButton1.TabIndex = 0
         Me.SimpleButton1.Text = "SimpleButton1"
         '
@@ -70,11 +71,20 @@ Partial Class Form1
         Me.ButtonEdit1.Size = New System.Drawing.Size(305, 20)
         Me.ButtonEdit1.TabIndex = 4
         '
+        'LabelControl1
+        '
+        Me.LabelControl1.Location = New System.Drawing.Point(98, 21)
+        Me.LabelControl1.Name = "LabelControl1"
+        Me.LabelControl1.Size = New System.Drawing.Size(66, 13)
+        Me.LabelControl1.TabIndex = 5
+        Me.LabelControl1.Text = "LabelControl1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(406, 306)
+        Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.ButtonEdit1)
         Me.Controls.Add(Me.DropDownButton1)
         Me.Controls.Add(Me.TextEdit2)
@@ -86,6 +96,7 @@ Partial Class Form1
         CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ButtonEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
@@ -93,5 +104,6 @@ Partial Class Form1
     Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents DropDownButton1 As DevExpress.XtraEditors.DropDownButton
     Friend WithEvents ButtonEdit1 As DevExpress.XtraEditors.ButtonEdit
+    Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
 
 End Class
